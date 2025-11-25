@@ -1,24 +1,24 @@
 import { Link } from "react-router-dom";
-import homeIcon from "../assets/home.svg";
-import history from "../assets/history.svg";
-import items from "../assets/items.svg";
-import dash from "../assets/dash.svg";
+import HomeIcon from "./icons/HomeIcon";
+import HistoryIcon from "./icons/HistoryIcon";
+import ItemsIcon from "./icons/ItemsIcon";
+import DashIcon from "./icons/DashIcon";
 
 const Header = () => {
   return (
-    <header className="bg-white-100 h-screen w-24">
-      <nav className="bg-purple-base h-screen">
+    <header className="py-10 h-screen bg-white-100  w-24">
+      <nav className=" bg-purple-base h-full rounded-r-full flex flex-col justify-center items-center gap-5">
         <Link to="/">
-          <img src={homeIcon} alt="Home" />
+          <HomeIcon className="w-8 h-8 text-white-base hover:text-white-200 transition-transform duration-600 hover:rotate-360" />
         </Link>
         <Link to="/history">
-          <img src={history} alt="historico" />
+          <HistoryIcon className="w-8 h-8 text-white-base hover:text-white-200 transition-transform duration-600 hover:rotate-360" />
         </Link>
         <Link to="/items">
-          <img src={items} alt="items" />
+          <ItemsIcon className="w-8 h-8 text-white-base hover:text-white-200 transition-transform duration-600 hover:rotate-360" />
         </Link>
         <Link to="/items">
-          <img src={dash} alt="dashboard" />
+          <DashIcon className="w-8 h-8 text-white-base hover:text-white-200 transition-transform duration-600 hover:rotate-360" />
         </Link>
       </nav>
     </header>
