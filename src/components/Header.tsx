@@ -6,7 +6,7 @@ import DashIcon from "./icons/DashIcon";
 
 const Header = () => {
   return (
-    <header className="py-10 h-screen bg-white-100  w-24">
+    <header className="py-10 h-screen bg-white-100  w-24 shadow-purple">
       <nav className=" bg-purple-base h-full rounded-r-full flex flex-col justify-center items-center gap-5">
         <Link to="/">
           <HomeIcon className="w-8 h-8 text-white-base hover:text-white-200 transition-transform duration-600 hover:rotate-360" />
