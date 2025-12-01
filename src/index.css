@@ -6,6 +6,8 @@
   --color-white-100: #ffffff;
   --color-white-200: #e8e8e8;
   --color-purple-base: #6434f8;
+  --color-yellow-100: #ffd600;
+  --color-red-base: #ff3b30;
 
   /* sombra roxa usando a cor acima */
   --shadow-purple: 0 4px 14px rgba(100, 52, 248, 0.35);
